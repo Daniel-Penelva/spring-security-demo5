@@ -14,6 +14,7 @@ public class UserController {
 
     private final UserService userService;
 
+    // http://localhost:8080/user
     @PostMapping
     public User create(@RequestBody User user) {
         return userService.create(user);
